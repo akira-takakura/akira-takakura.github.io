@@ -26,39 +26,39 @@ author:
   avatar           : "akira.jpg"
   name             : "Your Sidebar Name"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
+  bio              : "Master's student at Keio University"
+  location         : "Yokohama, Kanagawa, Japan"
   employer         : "Keio University"
   uri              : # URL
   email            : "takakura@sum.sd.keio.ac.jp" 
 
   # Academic websites
+  orcid            : "https://orcid.org/0009-0002-5224-2979"
+  researchmap      : "https://researchmap.jp/akira_takakura"
+  googlescholar    : "https://scholar.google.com/citations?hl=ja&user=qSC1m3cAAAAJ&view_op=list_works&authuser=1"
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.co.jp/citations?user=ZJw8sncAAAAJ&hl=ja"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "https://orcid.org/0009-0002-5224-2979"
   semantic         : # URL
   ssrn             : # URL
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
   scopus           : # URL
   zotero           : # URL
-  zotero           : "https://researchmap.jp/akira_takakura"
 
 
   # Repositories and software development
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : # "academicpages"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : #"bsky.app" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username

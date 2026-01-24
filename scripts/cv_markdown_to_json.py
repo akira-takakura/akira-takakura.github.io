@@ -131,6 +131,13 @@ def extract_author_info(config):
                 "username": "",
                 "url": author.get('researchgate')
             })
+
+        if author.get('researchmap'):
+            profiles.append({
+                "network": "Researchmap",
+                "username": "",
+                "url": author.get('researchmap')
+            })
         
         # Social media profiles
         if author.get('github'):
