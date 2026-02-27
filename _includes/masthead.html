@@ -18,6 +18,22 @@
               <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
             </li>
           {% endfor %}
+          {% if page.lang_ref %}
+            {% assign alternate_page = nil %}
+            {% for p in site.pages %}
+              {% if p.lang_ref == page.lang_ref and p.url != page.url %}
+                {% assign alternate_page = p %}
+                {% break %}
+              {% endif %}
+            {% endfor %}
+            {% if alternate_page %}
+              <li class="masthead__menu-item persist">
+                <a href="{{ base_path }}{{ alternate_page.url }}">
+                  {% if alternate_page.url contains '/ja/' %}日本語{% else %}English{% endif %}
+                </a>
+              </li>
+            {% endif %}
+          {% endif %}
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
           </li>
