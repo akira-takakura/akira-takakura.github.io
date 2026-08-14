@@ -52,7 +52,7 @@
             {% assign lang_toggle_label = "EN" %}
           {% else %}
             {% assign lang_toggle_url = ja_url %}
-            {% assign lang_toggle_label = "日本語" %}
+            {% assign lang_toggle_label = "JP" %}
           {% endif %}
           <li id="lang-toggle" class="masthead__menu-item persist">
             <a {% static_href %}href="{{ base_path }}{{ lang_toggle_url }}"{% endstatic_href %}>{{ lang_toggle_label }}</a>

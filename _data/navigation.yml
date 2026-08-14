@@ -34,9 +34,6 @@ en:
     # - title: "CV"
     #   url: /cv-json/
 
-    - title: "Guide"
-      url: /markdown/
-
 ja:
   main:
     - title: "論文"
@@ -44,7 +41,3 @@ ja:
 
     - title: "CV"
       url: /ja/cv/
-
-    # markdown.md (Guide) has no Japanese translation yet; link to the English page.
-    - title: "Guide"
-      url: /markdown/
