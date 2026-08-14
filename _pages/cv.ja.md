@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "CV"
-permalink: /ja/cv/
+permalink: /cv/
 author_profile: true
 lang: ja
 ref: cv

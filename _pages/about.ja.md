@@ -1,5 +1,5 @@
 ---
-permalink: /ja/
+permalink: /
 title: "プロフィール"
 author_profile: true
 lang: ja
