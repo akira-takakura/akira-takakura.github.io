@@ -9,8 +9,9 @@ redirect_from:
 
 {% include base_path %}
 
-Coming soon...
-======
+<a href="{{ base_path }}/files/akira_takakura_cv.pdf" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Download CV as PDF</a>
+
+<iframe src="{{ base_path }}/files/akira_takakura_cv.pdf" style="width: 100%; height: 100vh; border: none;" title="Akira Takakura CV"></iframe>
 
 <!-- 
 Education
