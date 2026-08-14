@@ -5,10 +5,13 @@
       <nav id="site-nav" class="greedy-nav">
         <button><span class="navicon"></span></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg persist {% if page.url == '/' or page.url == '/index.html' %}selected{% endif %}">
-            <a href="{{ base_path }}/">{{ site.title }}</a>
+          {% assign home_url = "/" %}
+          {% if page.lang == "ja" %}{% assign home_url = "/ja/" %}{% endif %}
+          <li class="masthead__menu-item masthead__menu-item--lg persist {% if page.url == home_url %}selected{% endif %}">
+            <a href="{{ base_path }}{{ home_url }}">{{ site.title }}</a>
           </li>
-          {% for link in site.data.navigation.main %}
+          {% assign nav_lang = page.lang | default: "en" %}
+          {% for link in site.data.navigation[nav_lang].main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
             {% else %}
@@ -18,22 +21,31 @@
               <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
             </li>
           {% endfor %}
-          {% if page.lang_ref %}
-            {% assign alternate_page = nil %}
-            {% for p in site.pages %}
-              {% if p.lang_ref == page.lang_ref and p.url != page.url %}
-                {% assign alternate_page = p %}
+          {% assign target_lang = "ja" %}
+          {% if page.lang == "ja" %}{% assign target_lang = "en" %}{% endif %}
+          {% assign alt_url = nil %}
+          {% if page.ref %}
+            {% assign candidates = site.pages | concat: site.posts %}
+            {% for c in candidates %}
+              {% if c.ref == page.ref and c.lang == target_lang %}
+                {% assign alt_url = c.url %}
                 {% break %}
               {% endif %}
             {% endfor %}
-            {% if alternate_page %}
-              <li class="masthead__menu-item persist">
-                <a href="{{ base_path }}{{ alternate_page.url }}">
-                  {% if alternate_page.url contains '/ja/' %}日本語{% else %}English{% endif %}
-                </a>
-              </li>
-            {% endif %}
           {% endif %}
+          {% if page.lang == "ja" %}
+            {% assign en_url = alt_url | default: "/" %}
+            {% assign ja_url = page.url %}
+          {% else %}
+            {% assign en_url = page.url %}
+            {% assign ja_url = alt_url | default: "/ja/" %}
+          {% endif %}
+          <li class="masthead__menu-item persist {% if page.lang != 'ja' %}selected{% endif %}">
+            <a href="{{ base_path }}{{ en_url }}">EN</a>
+          </li>
+          <li class="masthead__menu-item persist {% if page.lang == 'ja' %}selected{% endif %}">
+            <a href="{{ base_path }}{{ ja_url }}">日本語</a>
+          </li>
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
           </li>

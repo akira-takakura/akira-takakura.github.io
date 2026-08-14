@@ -39,6 +39,17 @@ en: &DEFAULT_EN
   comment_success_msg        : "Thanks for your comment! It will show on the site once it has been approved."
   comment_error_msg          : "Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again."
   loading_label              : "Loading..."
+  published_in_label         : "Published in"
+  citation_label             : "Recommended citation:"
+  download_paper_label       : "Download Paper"
+  download_slides_label      : "Download Slides"
+  download_bibtex_label      : "Download Bibtex"
+  permalink_label            : "Permalink"
+  date_prefix_label          : "Date:"
+  at_label                   : "at"
+  follow_button_label        : "Follow"
+  fork_of_label              : ", a fork of"
+  site_updated_label         : "Site last updated"
 en-US:
   <<: *DEFAULT_EN
 en-CA:
@@ -47,6 +58,57 @@ en-GB:
   <<: *DEFAULT_EN
 en-AU:
   <<: *DEFAULT_EN
+
+# Japanese
+# -----------------
+ja: &DEFAULT_JA
+  page                       : "ページ"
+  pagination_previous        : "前へ"
+  pagination_next            : "次へ"
+  breadcrumb_home_label      : "ホーム"
+  breadcrumb_separator       : "/"
+  toc_label                  : "目次"
+  ext_link_label             : "リンク"
+  less_than                  : "1分以内"
+  minute_read                : "分で読めます"
+  share_on_label             : "シェア"
+  meta_label                 :
+  tags_label                 : "タグ:"
+  categories_label           : "カテゴリー:"
+  date_label                 : "公開日:"
+  comments_label             : "コメントする"
+  comments_title             : "コメント"
+  more_label                 : "もっと見る"
+  related_label              : "関連記事"
+  follow_label               : "フォロー:"
+  feed_label                 : "フィード"
+  powered_by                 : "Powered by"
+  website_label              : "ウェブサイト"
+  email_label                : "メール"
+  recent_posts               : "最近の投稿"
+  undefined_wpm              : "_config.ymlにwords_per_minuteパラメータが定義されていません"
+  comment_form_info          : "メールアドレスは公開されません。必須項目には印がついています。"
+  comment_form_comment_label : "コメント"
+  comment_form_md_info       : "Markdownが利用できます。"
+  comment_form_name_label    : "名前"
+  comment_form_email_label   : "メールアドレス"
+  comment_form_website_label : "ウェブサイト（任意）"
+  comment_btn_submit         : "コメントを送信"
+  comment_btn_submitted      : "送信済み"
+  comment_success_msg        : "コメントありがとうございます！承認され次第サイトに表示されます。"
+  comment_error_msg          : "送信中にエラーが発生しました。必須項目がすべて入力されているかご確認の上、もう一度お試しください。"
+  loading_label              : "読み込み中..."
+  published_in_label         : "掲載誌:"
+  citation_label             : "推奨引用:"
+  download_paper_label       : "論文をダウンロード"
+  download_slides_label      : "スライドをダウンロード"
+  download_bibtex_label      : "Bibtexをダウンロード"
+  permalink_label            : "パーマリンク"
+  date_prefix_label          : "日付:"
+  at_label                   : "にて"
+  follow_button_label        : "フォロー"
+  fork_of_label              : "のフォークです。"
+  site_updated_label         : "最終更新日:"
 
 # Spanish
 # --------------

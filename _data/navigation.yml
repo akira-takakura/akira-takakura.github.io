@@ -6,34 +6,45 @@
 #
 # NOTE that only one of the CV options should be selected, the first is for the
 #      Markdown formatted page while the second is generated using JSON.
+#
+# NOTE: this file is language-keyed (en:/ja:) since Jekyll data files are not
+# automatically localized by jekyll-polyglot. _includes/masthead.html looks
+# this up via site.data.navigation[page.lang].main
 
-main:
-  - title: "Publications"
-    url: /publications/
+en:
+  main:
+    - title: "Publications"
+      url: /publications/
 
-  # - title: "Talks"
-  #   url: /talks/    
+    # - title: "Talks"
+    #   url: /talks/
 
-  # - title: "Teaching"
-  #   url: /teaching/    
-    
-  # - title: "Portfolio"
-  #   url: /portfolio/
-        
-  # - title: "Blog Posts"
-  #   url: /year-archive/
-    
-  - title: "CV"
-    url: /cv/
-    
-  # - title: "CV"
-  #   url: /cv-json/
-    
-  - title: "Guide"
-    url: /markdown/
+    # - title: "Teaching"
+    #   url: /teaching/
 
-  # - title: "English"
-  #   url: /en/
+    # - title: "Portfolio"
+    #   url: /portfolio/
 
-  # - title: "日本語"
-  #   url: /ja/
+    # - title: "Blog Posts"
+    #   url: /year-archive/
+
+    - title: "CV"
+      url: /cv/
+
+    # - title: "CV"
+    #   url: /cv-json/
+
+    - title: "Guide"
+      url: /markdown/
+
+ja:
+  main:
+    - title: "論文"
+      url: /ja/publications/
+
+    - title: "CV"
+      url: /ja/cv/
+
+    # markdown.md (Guide) has no Japanese translation yet; link to the English page.
+    - title: "Guide"
+      url: /markdown/

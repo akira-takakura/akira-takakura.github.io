@@ -1,20 +1,17 @@
 ---
-permalink: /
-title: "About Me"
+permalink: /ja/
+title: "プロフィール"
 author_profile: true
-lang: en
+lang: ja
 ref: about
-redirect_from: 
-  - /about/
-  - /about.html
 ---
 
-I’m a master’s student at [Nozaki Laboratory](https://nozaki-lab.jp/), Keio University.  
+慶應義塾大学 [野崎研究室](https://nozaki-lab.jp/) 修士課程に在籍しています。
 
-I am currently seeking a PhD position starting spring 2026. 
+2026年春からのPhD進学先を探しています。
 
 
-## News
+## お知らせ
 
 <ul>
   {% assign lang_posts = site.posts | where: "lang", page.lang %}

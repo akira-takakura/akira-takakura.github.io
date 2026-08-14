@@ -18,6 +18,12 @@ url                      : https://akira-takakura.github.io # The base hostname 
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
 
+# Polyglot (i18n)
+languages                : ["en", "ja"]
+default_lang              : "en"
+exclude_from_localization : ["assets", "files", "images", "talkmap"]
+parallel_localization     : false
+
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
@@ -314,6 +320,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
+  - jekyll-polyglot
 
 # Mimic GitHub Pages with --safe
 whitelist:
@@ -323,6 +330,7 @@ whitelist:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
+  - jekyll-polyglot
 
 
 # Archives
