@@ -25,3 +25,5 @@ I am currently seeking a PhD position starting spring 2026.
     </li>
   {% endfor %}
 </ul>
+
+[View all news →]({{ "/news/" | relative_url }})

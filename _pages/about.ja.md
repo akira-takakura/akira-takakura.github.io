@@ -22,3 +22,5 @@ ref: about
     </li>
   {% endfor %}
 </ul>
+
+[過去のニュース一覧 →]({{ "/ja/news/" | relative_url }})
