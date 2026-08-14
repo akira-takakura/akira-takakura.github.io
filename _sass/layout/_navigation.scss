@@ -203,12 +203,10 @@
   }
 
   .visible-links {
-    display: table;
+    display: flex;
+    align-items: center;
 
     li {
-      display: table-cell;
-      vertical-align: middle;
-
       &:first-child {
         font-weight: bold;
         text-wrap: wrap;
@@ -223,6 +221,10 @@
           margin-right: 0;
         }
       }
+    }
+
+    #lang-toggle {
+      margin-left: auto;
     }
 
     #theme-toggle {
