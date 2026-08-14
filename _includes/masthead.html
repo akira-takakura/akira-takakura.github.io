@@ -41,11 +41,21 @@
             {% assign en_url = "/" %}
             {% assign ja_url = "/ja/" %}
           {% endif %}
-          <li class="masthead__menu-item persist {% if page.lang != 'ja' %}selected{% endif %}">
-            <a {% static_href %}href="{{ base_path }}{{ en_url }}"{% endstatic_href %}>EN</a>
-          </li>
-          <li class="masthead__menu-item persist {% if page.lang == 'ja' %}selected{% endif %}">
-            <a {% static_href %}href="{{ base_path }}{{ ja_url }}"{% endstatic_href %}>日本語</a>
+          {% comment %}
+            Single toggle, same interaction pattern as #theme-toggle: it
+            always shows the OTHER language (the one clicking it switches
+            to), not the current one — clicking "EN" makes the site
+            English, clicking "日本語" makes it Japanese.
+          {% endcomment %}
+          {% if page.lang == "ja" %}
+            {% assign lang_toggle_url = en_url %}
+            {% assign lang_toggle_label = "EN" %}
+          {% else %}
+            {% assign lang_toggle_url = ja_url %}
+            {% assign lang_toggle_label = "日本語" %}
+          {% endif %}
+          <li id="lang-toggle" class="masthead__menu-item persist">
+            <a {% static_href %}href="{{ base_path }}{{ lang_toggle_url }}"{% endstatic_href %}>{{ lang_toggle_label }}</a>
           </li>
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
