@@ -21,24 +21,26 @@
               <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
             </li>
           {% endfor %}
-          {% assign target_lang = "ja" %}
-          {% if page.lang == "ja" %}{% assign target_lang = "en" %}{% endif %}
-          {% assign alt_url = nil %}
+          {% comment %}
+            Derive the sibling-language URL by string transformation of this
+            page's own URL, rather than looking up another document's .url —
+            under jekyll-polyglot, a document's .url read from a page/post
+            list reflects the language of the build pass currently running,
+            not that document's own lang, so cross-document lookups here are
+            unreliable. Pages without a real translation (no page.ref) fall
+            back to that language's homepage.
+          {% endcomment %}
           {% if page.ref %}
-            {% assign candidates = site.pages | concat: site.posts %}
-            {% for c in candidates %}
-              {% if c.ref == page.ref and c.lang == target_lang %}
-                {% assign alt_url = c.url %}
-                {% break %}
-              {% endif %}
-            {% endfor %}
-          {% endif %}
-          {% if page.lang == "ja" %}
-            {% assign en_url = alt_url | default: "/" %}
-            {% assign ja_url = page.url %}
+            {% if page.lang == "ja" %}
+              {% assign en_url = page.url | remove_first: "/ja" %}
+              {% assign ja_url = page.url %}
+            {% else %}
+              {% assign en_url = page.url %}
+              {% assign ja_url = page.url | prepend: "/ja" %}
+            {% endif %}
           {% else %}
-            {% assign en_url = page.url %}
-            {% assign ja_url = alt_url | default: "/ja/" %}
+            {% assign en_url = "/" %}
+            {% assign ja_url = "/ja/" %}
           {% endif %}
           <li class="masthead__menu-item persist {% if page.lang != 'ja' %}selected{% endif %}">
             <a href="{{ base_path }}{{ en_url }}">EN</a>
