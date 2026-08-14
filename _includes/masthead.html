@@ -42,7 +42,7 @@
             {% assign en_url = "/" %}
             {% assign ja_url = "/ja/" %}
           {% endif %}
-          <li class="masthead__menu-item persist {% if page.lang != 'ja' %}selected{% endif %}">
+          <!--! DEBUG page.lang=[{{ page.lang }}] page.ref=[{{ page.ref }}] page.url=[{{ page.url }}] en_url=[{{ en_url }}] ja_url=[{{ ja_url }}] --><li class="masthead__menu-item persist {% if page.lang != 'ja' %}selected{% endif %}">
             <a href="{{ base_path }}{{ en_url }}">EN</a>
           </li>
           <li class="masthead__menu-item persist {% if page.lang == 'ja' %}selected{% endif %}">
