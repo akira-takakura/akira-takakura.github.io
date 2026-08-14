@@ -28,7 +28,11 @@
             Liquid. EN/JA sibling pages share the same authored permalink by
             convention, so the EN URL is just page.url and the JA URL is
             page.url with /ja prepended. Pages without a translation (no
-            page.ref) fall back to that language's homepage.
+            page.ref) fall back to that language's homepage. The href values
+            are wrapped in polyglot's static_href tag so its automatic link
+            relativizer (which would otherwise force every href back to the
+            current page's own language) leaves these cross-language links
+            alone — see https://github.com/untra/polyglot#disabling-url-relativizing
           {% endcomment %}
           {% if page.ref %}
             {% assign en_url = page.url %}
@@ -38,10 +42,10 @@
             {% assign ja_url = "/ja/" %}
           {% endif %}
           <li class="masthead__menu-item persist {% if page.lang != 'ja' %}selected{% endif %}">
-            <a href="{{ base_path }}{{ en_url }}">EN</a>
+            <a {% static_href %}href="{{ base_path }}{{ en_url }}"{% endstatic_href %}>EN</a>
           </li>
           <li class="masthead__menu-item persist {% if page.lang == 'ja' %}selected{% endif %}">
-            <a href="{{ base_path }}{{ ja_url }}">日本語</a>
+            <a {% static_href %}href="{{ base_path }}{{ ja_url }}"{% endstatic_href %}>日本語</a>
           </li>
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
