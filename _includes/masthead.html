@@ -54,15 +54,17 @@
             {% assign lang_toggle_url = ja_url %}
             {% assign lang_toggle_label = "JP" %}
           {% endif %}
-          <li id="lang-toggle" class="masthead__menu-item persist">
-            <a {% static_href %}href="{{ base_path }}{{ lang_toggle_url }}"{% endstatic_href %}>{{ lang_toggle_label }}</a>
-          </li>
-          <li id="theme-toggle" class="masthead__menu-item persist tail">
-            <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
-          </li>
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
+      <ul class="masthead__toggles">
+        <li id="lang-toggle" class="masthead__menu-item">
+          <a {% static_href %}href="{{ base_path }}{{ lang_toggle_url }}"{% endstatic_href %}>{{ lang_toggle_label }}</a>
+        </li>
+        <li id="theme-toggle" class="masthead__menu-item">
+          <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
+        </li>
+      </ul>
     </div>
   </div>
 </div>

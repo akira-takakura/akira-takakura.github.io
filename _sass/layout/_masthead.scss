@@ -45,12 +45,43 @@
 }
 
 .masthead__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   ul {
     margin: 0;
     padding: 0;
     clear: both;
     list-style-type: none;
+  }
+}
+
+.masthead__toggles {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  margin-left: 1rem;
+
+  li {
+    margin-left: 1rem;
+  }
+
+  a {
+    display: block;
+    color: var(--global-masthead-link-color);
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--global-masthead-link-color-hover);
+    }
+  }
+
+  #theme-toggle a {
+    width: 25px;
+    display: flex;
+    justify-content: center;
   }
 }
 
