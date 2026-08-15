@@ -21,7 +21,7 @@ ref: news
   {% endif %}
     <li>
       <span>{{ post.date | date: "%Y-%m-%d" }}</span>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <span>{{ post.title }}</span>
     </li>
   {% assign next_idx = idx0 | plus: 1 %}
   {% assign next_in_page_pos = next_idx | modulo: items_per_page %}

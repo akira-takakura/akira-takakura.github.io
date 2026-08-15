@@ -7,4 +7,4 @@ lang: en
 ref: hobbies
 ---
 
-You can find my hobby videos on my YouTube channel: [@ClTeam137](https://www.youtube.com/@ClTeam137)
+You can find hobby videos on the YouTube channel: [@ClTeam137](https://www.youtube.com/@ClTeam137)
