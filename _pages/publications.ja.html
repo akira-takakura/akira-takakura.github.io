@@ -13,23 +13,85 @@ ref: publications
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
+{% assign pub_list = site.data.publications_list %}
+
+<nav class="pagination" id="pub-category-tabs">
+  <ul>
+    <li><a href="#" class="pub-cat-btn current" data-cat="journal">論文</a></li>
+    <li><a href="#" class="pub-cat-btn" data-cat="domestic">国内会議</a></li>
+    <li><a href="#" class="pub-cat-btn" data-cat="international">国際会議</a></li>
+    <li><a href="#" class="pub-cat-btn" data-cat="award">受賞</a></li>
+  </ul>
+</nav>
+
+<nav class="pagination" id="pub-year-tabs">
+  <ul>
+    <li><a href="#" class="pub-year-btn current" data-year="all">全期間</a></li>
+    <li><a href="#" class="pub-year-btn" data-year="2026">2026</a></li>
+    <li><a href="#" class="pub-year-btn" data-year="2025">2025</a></li>
+    <li><a href="#" class="pub-year-btn" data-year="2024">2024</a></li>
+  </ul>
+</nav>
+
+<div id="pub-lists">
+{% for cat in "journal,domestic,international,award" | split: "," %}
+  {% assign items = pub_list | where: "category", cat %}
+  <ul class="pub-category" data-cat="{{ cat }}"{% unless cat == "journal" %} style="display:none;"{% endunless %}>
+  {% for item in items %}
+    <li data-year="{{ item.year }}">
+      <p class="pub-title">{{ item.title }}</p>
+      {% if item.authors and item.authors != "" %}
+      <p class="pub-meta">{{ item.authors | replace: "Akira Takakura", "<strong>Akira Takakura</strong>" }}<br>
+      {{ item.venue }}{% if item.details %}, {{ item.details }}{% endif %} ({{ item.date }})</p>
+      {% else %}
+      <p class="pub-meta">{{ item.venue }} ({{ item.date }})</p>
       {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
+    </li>
   {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+  </ul>
+{% endfor %}
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var catButtons = document.querySelectorAll('#pub-category-tabs .pub-cat-btn');
+  var yearButtons = document.querySelectorAll('#pub-year-tabs .pub-year-btn');
+  var catSections = document.querySelectorAll('#pub-lists .pub-category');
+  var currentYear = 'all';
+
+  function applyYearFilter() {
+    catSections.forEach(function (sec) {
+      if (sec.style.display === 'none') { return; }
+      sec.querySelectorAll('li').forEach(function (li) {
+        var y = li.getAttribute('data-year');
+        li.style.display = (currentYear === 'all' || y === currentYear) ? '' : 'none';
+      });
+    });
+  }
+
+  catButtons.forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      var cat = btn.getAttribute('data-cat');
+      catSections.forEach(function (sec) {
+        sec.style.display = (sec.getAttribute('data-cat') === cat) ? '' : 'none';
+      });
+      catButtons.forEach(function (b) { b.classList.remove('current'); });
+      btn.classList.add('current');
+      applyYearFilter();
+    });
+  });
+
+  yearButtons.forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      currentYear = btn.getAttribute('data-year');
+      yearButtons.forEach(function (b) { b.classList.remove('current'); });
+      btn.classList.add('current');
+      applyYearFilter();
+    });
+  });
+
+  applyYearFilter();
+});
+</script>

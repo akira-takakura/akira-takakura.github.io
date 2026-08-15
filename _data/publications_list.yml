@@ -1,0 +1,133 @@
+# Structured achievement list rendered by _pages/publications.html and
+# publications.ja.html via category/year tab filtering. Titles, authors and
+# venues are kept in English on both language pages (standard academic
+# practice). Source: https://researchmap.jp/akira_takakura?lang=en
+
+- category: journal
+  year: 2026
+  title: "Motion Reproduction System for Environmental Impedance Variation via Data-Driven Identification of Human Stiffness"
+  authors: "Akira Takakura, Kazuki Yane, Tomoya Kitamura, Shuichi Adachi, Takahiro Nozaki"
+  venue: "IEEE Transactions on Industrial Electronics"
+  details: "73(5), 7214-7224"
+  date: "May 2026"
+
+- category: journal
+  year: 2026
+  title: "Bilateral Teleoperation with Auto-Elimination of Probing Signal for Environmental Impedance Identification Considering Operability"
+  authors: "Akira Takakura, Izumi Kotani, Kazuki Yane, Takahiro Nozaki"
+  venue: "IEEE Open Journal of the Industrial Electronics Society"
+  details: "pp.1-11"
+  date: "March 2026"
+
+- category: journal
+  year: 2026
+  title: "Compatible realization of control and identification of direct adaptive control via probing signal auto-elimination"
+  authors: "Akira Takakura, Takashi Yokoyama, Takahiro Nozaki, Shuichi Adachi, Hiromitsu Ohmori"
+  venue: "IFAC Journal of Systems and Control"
+  details: "100375"
+  date: "January 2026"
+
+- category: international
+  year: 2026
+  title: "Identification of the Trapping Range of Optical Tweezers Adapting to Changes in Particle Size and Laser Power"
+  authors: "Moyu Otsuka, Akira Takakura, Saki Kozu, Koji Niwa, Kazunobu Hashikawa, Takahiro Nozaki"
+  venue: "IEEE 35th International Symposium on Industrial Electronics (ISIE2026)"
+  date: "June 2026"
+
+- category: international
+  year: 2026
+  title: "Bilateral Teleoperation With Autoelimination of Probing Signal for Environmental Impedance Identification Considering Operability"
+  authors: "Akira Takakura, Izumi Kotani, Kazuki Yane, Takahiro Nozaki"
+  venue: "IEEE 35th International Symposium on Industrial Electronics (ISIE2026)"
+  date: "June 2026"
+
+- category: international
+  year: 2026
+  title: "Mitigation of Current Steady-State Error in PMLSM via Multi-Sampling Deadbeat Current Control with Extended State Observer"
+  authors: "Hozumi Kurotaki, Akira Takakura, Tomoki Yokoyama, Toshiyuki Murakami, Takahiro Nozaki"
+  venue: "The 2026 International Power Electronics Conference (IPEC-2026)"
+  date: "June 2026"
+
+- category: international
+  year: 2026
+  title: "Motion Reproduction System for Environmental Impedance Variation via Data-driven Identification of Human Stiffness"
+  authors: "Akira Takakura, Kazuki Yane, Tomoya Kitamura, Shuichi Adachi, Takahiro Nozaki"
+  venue: "IEEE 19th International Conference on Advanced Motion Control (AMC2026)"
+  date: "March 2026"
+
+- category: international
+  year: 2026
+  title: "A High Performance Disturbance Observer: A Unified Synthesis Approach"
+  authors: "Emre Sariyildiz, Akira Takakura, Takahiro Nozaki"
+  venue: "IEEE 19th International Conference on Advanced Motion Control (AMC2026)"
+  date: "March 2026"
+
+- category: international
+  year: 2026
+  title: "Instantaneous Environment Identification Using Analytic Signal"
+  authors: "Yuzuka Kajiwara, Akira Takakura, Emre Sariyildiz, Takahiro Nozaki"
+  venue: "IEEJ International Workshop on Sensing, Actuation, Motion Control, and Optimization (SAMCON2026)"
+  date: "March 2026"
+
+- category: international
+  year: 2026
+  title: "Environment-Compliant Motion Generation Based on Mechanical Impedance Bridging"
+  authors: "Kastuma Shirakabe, Akira Takakura, Kazuki Yane, Takahiro Nozaki"
+  venue: "IEEJ International Workshop on Sensing, Actuation, Motion Control, and Optimization (SAMCON2026)"
+  date: "March 2026"
+
+- category: international
+  year: 2026
+  title: "GOSIL: A Goal-Oriented Motion Correction Framework for Environmental Adaptation via Real-Time Simulation-in-the-Loop"
+  authors: "Taiyo Shimada, Akira Takakura, Takahiro Nozaki"
+  venue: "IEEJ International Workshop on Sensing, Actuation, Motion Control, and Optimization (SAMCON2026)"
+  date: "March 2026"
+
+- category: international
+  year: 2025
+  title: "Environmental Stiffness-Based Gain Updating Law for Bilateral Teleoperation"
+  authors: "Akira Takakura, Shigeki Yashita, Takahiro Nozaki"
+  venue: "IFAC Joint Symposia on Mechatronics & Robotics"
+  date: "July 2025"
+
+- category: international
+  year: 2025
+  title: "Control Stiffness-Based Motion Reproduction for Environmental Impedance Variation"
+  authors: "Akira Takakura, Takahiro Nozaki"
+  venue: "2025 IEEE International Conference on Mechatronics (ICM)"
+  date: "March 2025"
+
+- category: international
+  year: 2024
+  title: "Probing Signal Injection for Compatible Realization of Operationality and Impedance Identification"
+  authors: "Akira Takakura, Kazuki Yane, Takahiro Nozaki"
+  venue: "IECON 2024 - 50th Annual Conference of the IEEE Industrial Electronics Society"
+  date: "November 2024"
+
+- category: domestic
+  year: 2026
+  title: "Instantaneous Environmental Impedance Identification via Finite Time Observer"
+  authors: ""
+  venue: "The Society of Instrument and Control Engineers (SICE)"
+  date: "March 2026"
+
+- category: domestic
+  year: 2025
+  title: "Design of 2DOF Force Control System via Environmental Impedance Identification for Iterative Motion"
+  authors: "Akira Takakura, Shuichi Adachi, Takahiro Nozaki"
+  venue: "IEEJ Industry Applications Society Conference"
+  date: "August 2025"
+
+- category: award
+  year: 2026
+  title: "JSME Miura Award (日本機械学会三浦賞)"
+  authors: ""
+  venue: "Japan Society of Mechanical Engineers"
+  date: "March 2026"
+
+- category: award
+  year: 2026
+  title: "IEEJ Industry Applications Society Excellent Presentation Award — for \"Design of 2DOF Force Control System via Environmental Impedance Identification for Iterative Motion\""
+  authors: ""
+  venue: "The Institute of Electrical Engineers of Japan"
+  date: "March 2026"
