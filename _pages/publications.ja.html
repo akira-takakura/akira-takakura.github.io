@@ -52,11 +52,9 @@ ref: publications
     <ul class="pub-category">
     {% for item in items %}
       <li data-year="{{ item.year }}">
-        <p class="pub-title">[{{ forloop.index }}]
-        {% if item.authors and item.authors != "" %}{{ item.authors | replace: "Akira Takakura", "<strong class='pub-me'>Akira Takakura</strong>" }}, {% endif %}&ldquo;{{ item.title }}&rdquo;, {{ item.venue }}{% if item.details %}, {{ item.details }}{% endif %}, {{ item.year }}.</p>
-        {% if item.webpage and item.webpage != "" %}
-        <a class="pub-badge" href="{{ item.webpage }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i> Website</a>
-        {% endif %}
+        <p class="pub-title"><span class="pub-num">[{{ forloop.index }}]</span>
+        {% if item.authors and item.authors != "" %}{{ item.authors | replace: "Akira Takakura", "<strong class='pub-me'>Akira Takakura</strong>" }}, {% endif %}&ldquo;{{ item.title }}&rdquo;, {{ item.venue }}{% if item.details %}, {{ item.details }}{% endif %}, {{ item.year }}.
+        {% if item.webpage and item.webpage != "" %}<a class="pub-badge" href="{{ item.webpage }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i> Website</a>{% endif %}</p>
       </li>
     {% endfor %}
     </ul>

@@ -265,6 +265,10 @@
     font-weight: 700;
   }
 
+  .pub-num {
+    font-size: 0.9em;
+  }
+
   .pub-me {
     text-decoration: underline;
   }
@@ -274,7 +278,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.4em;
-  margin-left: 2rem;
+  margin-left: 0.5em;
   padding: 0.2em 0.8em;
   color: var(--global-link-color);
   font-size: $type-size-7;
