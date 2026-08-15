@@ -260,7 +260,13 @@
 
   .pub-title {
     margin: 0 0 0.25em;
+    padding-left: 2em;
+    text-indent: -2em;
     font-weight: 700;
+  }
+
+  .pub-me {
+    text-decoration: underline;
   }
 
   .pub-meta {
