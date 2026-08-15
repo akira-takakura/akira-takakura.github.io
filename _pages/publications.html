@@ -17,9 +17,11 @@ ref: publications
 
 <nav class="pagination" id="pub-category-tabs">
   <ul>
-    <li><a href="#" class="pub-cat-btn current" data-cat="journal">Journal Papers</a></li>
+    <li><a href="#" class="pub-cat-btn current" data-cat="all">All Categories</a></li>
+    <li><a href="#" class="pub-cat-btn" data-cat="journal">Journal Papers</a></li>
+    <li><a href="#" class="pub-cat-btn" data-cat="international_proc">International Conference (Proceedings)</a></li>
+    <li><a href="#" class="pub-cat-btn" data-cat="international_noproc">International Conference</a></li>
     <li><a href="#" class="pub-cat-btn" data-cat="domestic">Domestic Conference</a></li>
-    <li><a href="#" class="pub-cat-btn" data-cat="international">International Conference</a></li>
     <li><a href="#" class="pub-cat-btn" data-cat="award">Awards</a></li>
   </ul>
 </nav>
@@ -34,10 +36,10 @@ ref: publications
 </nav>
 
 <div id="pub-lists">
-{% assign pub_categories = "journal,domestic,international,award" | split: "," %}
+{% assign pub_categories = "journal,international_proc,international_noproc,domestic,award" | split: "," %}
 {% for cat in pub_categories %}
   {% assign items = pub_list | where: "category", cat %}
-  <ul class="pub-category" data-cat="{{ cat }}"{% unless cat == "journal" %} style="display:none;"{% endunless %}>
+  <ul class="pub-category" data-cat="{{ cat }}">
   {% for item in items %}
     <li data-year="{{ item.year }}">
       <p class="pub-title">[{{ forloop.index }}] {{ item.title }}</p>
@@ -75,7 +77,8 @@ document.addEventListener('DOMContentLoaded', function () {
       e.preventDefault();
       var cat = btn.getAttribute('data-cat');
       catSections.forEach(function (sec) {
-        sec.style.display = (sec.getAttribute('data-cat') === cat) ? '' : 'none';
+        var show = (cat === 'all') || (sec.getAttribute('data-cat') === cat);
+        sec.style.display = show ? '' : 'none';
       });
       catButtons.forEach(function (b) { b.classList.remove('current'); });
       btn.classList.add('current');
