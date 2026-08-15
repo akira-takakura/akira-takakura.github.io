@@ -38,7 +38,8 @@ ref: publications
 <div id="pub-lists">
 {% assign pub_categories = "journal,international_proc,international_noproc,domestic,award" | split: "," %}
 {% for cat in pub_categories %}
-  {% assign items = pub_list | where: "category", cat | reverse %}
+  {% assign items = pub_list | where: "category", cat %}
+  {% assign items_total = items.size %}
   {% case cat %}
     {% when "journal" %}{% assign cat_heading = "学術論文誌" %}
     {% when "international_proc" %}{% assign cat_heading = "国際学会発表 (Proceedings)" %}
@@ -51,8 +52,9 @@ ref: publications
     <hr class="pub-cat-hr" />
     <ul class="pub-category">
     {% for item in items %}
+      {% assign pub_num = items_total | minus: forloop.index0 %}
       <li data-year="{{ item.year }}">
-        <p class="pub-title"><span class="pub-num">[{{ forloop.index }}]</span>
+        <p class="pub-title"><span class="pub-num">[{{ pub_num }}]</span>
         {% if item.authors and item.authors != "" %}{{ item.authors | replace: "Akira Takakura", "<strong class='pub-me'>Akira Takakura</strong>" }}, {% endif %}&ldquo;{{ item.title }}&rdquo;, <i>{{ item.venue }}</i>{% if item.details %}, {{ item.details }}{% endif %}, {{ item.year }}.
         {% if item.webpage and item.webpage != "" %}<a class="pub-badge" href="{{ item.webpage }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-link" aria-hidden="true"></i> Website</a>{% endif %}</p>
       </li>
