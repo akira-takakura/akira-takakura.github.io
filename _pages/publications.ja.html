@@ -19,9 +19,9 @@ ref: publications
   <ul>
     <li><a href="#" class="pub-cat-btn current" data-cat="all">全カテゴリ</a></li>
     <li><a href="#" class="pub-cat-btn" data-cat="journal">学術論文誌</a></li>
-    <li><a href="#" class="pub-cat-btn" data-cat="international_proc">国際会議発表 (Proceedings)</a></li>
-    <li><a href="#" class="pub-cat-btn" data-cat="international_noproc">国際会議発表</a></li>
-    <li><a href="#" class="pub-cat-btn" data-cat="domestic">国内会議</a></li>
+    <li><a href="#" class="pub-cat-btn" data-cat="international_proc">国際学会発表 (Proceedings)</a></li>
+    <li><a href="#" class="pub-cat-btn" data-cat="international_noproc">国際学会発表</a></li>
+    <li><a href="#" class="pub-cat-btn" data-cat="domestic">国内学会発表</a></li>
     <li><a href="#" class="pub-cat-btn" data-cat="award">受賞</a></li>
   </ul>
 </nav>
@@ -39,19 +39,30 @@ ref: publications
 {% assign pub_categories = "journal,international_proc,international_noproc,domestic,award" | split: "," %}
 {% for cat in pub_categories %}
   {% assign items = pub_list | where: "category", cat %}
-  <ul class="pub-category" data-cat="{{ cat }}">
-  {% for item in items %}
-    <li data-year="{{ item.year }}">
-      <p class="pub-title">[{{ forloop.index }}] {{ item.title }}</p>
-      {% if item.authors and item.authors != "" %}
-      <p class="pub-meta">{{ item.authors | replace: "Akira Takakura", "<strong class='pub-me'>Akira Takakura</strong>" }}<br>
-      {{ item.venue }}{% if item.details %}, {{ item.details }}{% endif %} ({{ item.date }})</p>
-      {% else %}
-      <p class="pub-meta">{{ item.venue }} ({{ item.date }})</p>
-      {% endif %}
-    </li>
-  {% endfor %}
-  </ul>
+  {% case cat %}
+    {% when "journal" %}{% assign cat_heading = "学術論文誌" %}
+    {% when "international_proc" %}{% assign cat_heading = "国際学会発表 (Proceedings)" %}
+    {% when "international_noproc" %}{% assign cat_heading = "国際学会発表" %}
+    {% when "domestic" %}{% assign cat_heading = "国内学会発表" %}
+    {% when "award" %}{% assign cat_heading = "受賞" %}
+  {% endcase %}
+  <div class="pub-section" data-cat="{{ cat }}">
+    <h2 class="pub-cat-heading">{{ cat_heading }}</h2>
+    <hr class="pub-cat-hr" />
+    <ul class="pub-category">
+    {% for item in items %}
+      <li data-year="{{ item.year }}">
+        <p class="pub-title">[{{ forloop.index }}] {{ item.title }}</p>
+        {% if item.authors and item.authors != "" %}
+        <p class="pub-meta">{{ item.authors | replace: "Akira Takakura", "<strong class='pub-me'>Akira Takakura</strong>" }}<br>
+        {{ item.venue }}{% if item.details %}, {{ item.details }}{% endif %} ({{ item.date }})</p>
+        {% else %}
+        <p class="pub-meta">{{ item.venue }} ({{ item.date }})</p>
+        {% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
 {% endfor %}
 </div>
 
@@ -59,7 +70,7 @@ ref: publications
 document.addEventListener('DOMContentLoaded', function () {
   var catButtons = document.querySelectorAll('#pub-category-tabs .pub-cat-btn');
   var yearButtons = document.querySelectorAll('#pub-year-tabs .pub-year-btn');
-  var catSections = document.querySelectorAll('#pub-lists .pub-category');
+  var catSections = document.querySelectorAll('#pub-lists .pub-section');
   var currentYear = 'all';
 
   function applyYearFilter() {
