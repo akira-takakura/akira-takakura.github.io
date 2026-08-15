@@ -272,12 +272,16 @@
   .pub-me {
     text-decoration: underline;
   }
+
+  .pub-links {
+    margin: 0.3em 0 0;
+    padding-left: 2rem;
+  }
 }
 
 a.pub-badge {
   display: inline-block;
   box-sizing: content-box;
-  margin-left: 8px;
   padding: 4px 14px;
   color: var(--global-link-color);
   font-size: 12px;
