@@ -275,25 +275,19 @@
 }
 
 a.pub-badge {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  gap: 0.35em;
-  margin-left: 0.5em;
-  padding: 0.3em 0.9em;
+  display: inline-block;
+  box-sizing: content-box;
+  margin-left: 8px;
+  padding: 4px 14px;
   color: var(--global-link-color);
-  font-size: 0.75rem;
+  font-size: 12px;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1.8;
   white-space: nowrap;
   text-decoration: none !important;
   border: 1px solid var(--global-link-color);
   border-radius: 999px;
   transition: $global-transition;
-
-  i {
-    font-size: 0.85em;
-  }
 
   &:hover {
     color: #fff;

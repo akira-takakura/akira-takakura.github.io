@@ -56,7 +56,7 @@ ref: publications
       <li data-year="{{ item.year }}">
         <p class="pub-title"><span class="pub-num">[{{ pub_num }}]</span>
         {% if item.authors and item.authors != "" %}{{ item.authors | replace: "Akira Takakura", "<strong class='pub-me'>Akira Takakura</strong>" }}, {% endif %}&ldquo;{{ item.title }}&rdquo;, <i>{{ item.venue }}</i>{% if item.details %}, {{ item.details }}{% endif %}, {{ item.year }}.
-        {% if item.webpage and item.webpage != "" %}<a class="pub-badge" href="{{ item.webpage }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-link" aria-hidden="true"></i> Website</a>{% endif %}</p>
+        {% if item.webpage and item.webpage != "" %}<a class="pub-badge" href="{{ item.webpage }}" target="_blank" rel="noopener noreferrer">Website</a>{% endif %}</p>
       </li>
     {% endfor %}
     </ul>

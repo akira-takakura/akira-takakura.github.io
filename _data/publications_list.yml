@@ -5,15 +5,6 @@
 
 - category: journal
   year: 2026
-  title: "Motion Reproduction System for Environmental Impedance Variation via Data-Driven Identification of Human Stiffness"
-  authors: "Akira Takakura, Kazuki Yane, Tomoya Kitamura, Shuichi Adachi, Takahiro Nozaki"
-  venue: "IEEE Transactions on Industrial Electronics"
-  details: "73(5), 7214-7224"
-  date: "May 2026"
-  webpage: "https://researchmap.jp/akira_takakura/published_papers/51965135"
-
-- category: journal
-  year: 2026
   title: "Bilateral Teleoperation with Auto-Elimination of Probing Signal for Environmental Impedance Identification Considering Operability"
   authors: "Akira Takakura, Izumi Kotani, Kazuki Yane, Takahiro Nozaki"
   venue: "IEEE Open Journal of the Industrial Electronics Society"
@@ -29,6 +20,15 @@
   details: "100375"
   date: "January 2026"
   webpage: "https://researchmap.jp/akira_takakura/published_papers/52133057"
+
+- category: journal
+  year: 2026
+  title: "Motion Reproduction System for Environmental Impedance Variation via Data-Driven Identification of Human Stiffness"
+  authors: "Akira Takakura, Kazuki Yane, Tomoya Kitamura, Shuichi Adachi, Takahiro Nozaki"
+  venue: "IEEE Transactions on Industrial Electronics"
+  details: "73(5), 7214-7224"
+  date: "May 2026"
+  webpage: "https://researchmap.jp/akira_takakura/published_papers/51965135"
 
 - category: international_proc
   year: 2026
