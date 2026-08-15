@@ -274,7 +274,7 @@
   }
 }
 
-.pub-badge {
+a.pub-badge {
   display: inline-flex;
   align-items: center;
   vertical-align: middle;
@@ -286,7 +286,7 @@
   font-weight: 600;
   line-height: 1.5;
   white-space: nowrap;
-  text-decoration: none;
+  text-decoration: none !important;
   border: 1px solid var(--global-link-color);
   border-radius: 999px;
   transition: $global-transition;
@@ -298,6 +298,7 @@
   &:hover {
     color: #fff;
     background: var(--global-link-color);
+    text-decoration: none !important;
   }
 }
 
