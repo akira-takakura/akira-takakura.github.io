@@ -40,7 +40,7 @@ ref: publications
   <ul class="pub-category" data-cat="{{ cat }}"{% unless cat == "journal" %} style="display:none;"{% endunless %}>
   {% for item in items %}
     <li data-year="{{ item.year }}">
-      <p class="pub-title">{{ item.title }}</p>
+      <p class="pub-title">[{{ forloop.index }}] {{ item.title }}</p>
       {% if item.authors and item.authors != "" %}
       <p class="pub-meta">{{ item.authors | replace: "Akira Takakura", "<strong>Akira Takakura</strong>" }}<br>
       {{ item.venue }}{% if item.details %}, {{ item.details }}{% endif %} ({{ item.date }})</p>
