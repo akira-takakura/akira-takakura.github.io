@@ -276,3 +276,29 @@
     font-size: $type-size-6;
   }
 }
+
+.pub-cat-heading {
+  margin-top: 1.5em;
+}
+
+#pub-category-tabs,
+#pub-year-tabs {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+  }
+
+  li {
+    float: none;
+    margin: 0;
+  }
+
+  a {
+    border-radius: $border-radius;
+  }
+}
+
+#pub-year-tabs {
+  margin-bottom: 1.5em;
+}
