@@ -42,7 +42,7 @@ ref: publications
     <li data-year="{{ item.year }}">
       <p class="pub-title">[{{ forloop.index }}] {{ item.title }}</p>
       {% if item.authors and item.authors != "" %}
-      <p class="pub-meta">{{ item.authors | replace: "Akira Takakura", "<strong class=\"pub-me\">Akira Takakura</strong>" }}<br>
+      <p class="pub-meta">{{ item.authors | replace: "Akira Takakura", "<strong class='pub-me'>Akira Takakura</strong>" }}<br>
       {{ item.venue }}{% if item.details %}, {{ item.details }}{% endif %} ({{ item.date }})</p>
       {% else %}
       <p class="pub-meta">{{ item.venue }} ({{ item.date }})</p>
