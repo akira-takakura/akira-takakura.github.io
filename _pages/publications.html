@@ -38,7 +38,7 @@ ref: publications
 <div id="pub-lists">
 {% assign pub_categories = "journal,international_proc,international_noproc,domestic,award" | split: "," %}
 {% for cat in pub_categories %}
-  {% assign items = pub_list | where: "category", cat %}
+  {% assign items = pub_list | where: "category", cat | reverse %}
   {% case cat %}
     {% when "journal" %}{% assign cat_heading = "Journal Papers" %}
     {% when "international_proc" %}{% assign cat_heading = "International Conference (Proceedings)" %}
