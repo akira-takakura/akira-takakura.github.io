@@ -6,11 +6,11 @@ lang: ja
 ref: about
 ---
 
-慶應義塾大学 青木研究室のPh.D. 1年生です。指導教員はYoshimitsu Aoki教授とMariko Isogawa准教授です。
+慶應義塾大学 [野崎研究室](https://nozaki-lab.jp/) Ph.D. 1年生です。指導教員は野崎貴裕教授です。
 
-現在、Carnegie Mellon UniversityのKaterina Fragkiadaki教授のもとに滞在し、人間動作解析と物理シミュレーションに関する研究を行っています。
+現在、Carnegie Mellon UniversityのZackory Erickson教授（RCHI Lab）のもとに滞在し、ロボットによる着衣支援（robot-assisted dressing）に関する研究を行っています。
 
-研究興味は、コンピュータビジョン、人間動作モデリング、ロボティクス、無線を用いた人物センシングです。
+研究興味は、適応制御、システム同定、ロボティクス、ハプティクスです。
 
 
 ## お知らせ

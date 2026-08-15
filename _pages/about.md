@@ -9,11 +9,11 @@ redirect_from:
   - /about.html
 ---
 
-I am a first-year PhD student at Aoki Lab, Keio University, advised by Prof. Yoshimitsu Aoki and Dr. Mariko Isogawa.
+I am a first-year PhD student at [Nozaki Laboratory](https://nozaki-lab.jp/), Keio University, advised by Prof. Takahiro Nozaki.
 
-I am currently staying at Carnegie Mellon University under Prof. Katerina Fragkiadaki, conducting research on human motion and physics simulation.
+I am currently staying at Carnegie Mellon University under Prof. Zackory Erickson (RCHI Lab), working on robot-assisted dressing.
 
-My research interests include computer vision, human motion modeling, robotics, and wireless human sensing.
+My research interests include adaptive control, system identification, robotics, and haptics.
 
 
 ## News
