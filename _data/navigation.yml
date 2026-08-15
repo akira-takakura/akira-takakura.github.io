@@ -34,6 +34,9 @@ en:
     # - title: "CV"
     #   url: /cv-json/
 
+    - title: "Hobbies"
+      url: /hobbies/
+
 ja:
   main:
     - title: "論文"
@@ -41,3 +44,6 @@ ja:
 
     - title: "CV"
       url: /ja/cv/
+
+    - title: "趣味"
+      url: /ja/hobbies/

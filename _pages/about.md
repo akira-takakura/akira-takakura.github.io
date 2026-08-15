@@ -11,7 +11,7 @@ redirect_from:
 
 I am a first-year PhD student at [Nozaki Laboratory](https://nozaki-lab.jp/), Keio University, advised by Prof. Takahiro Nozaki.
 
-I am currently staying at Carnegie Mellon University under Prof. Zackory Erickson (RCHI Lab), working on robot-assisted dressing.
+I am currently staying at Carnegie Mellon University under Prof. Zackory Erickson ([RCHI Lab](https://rchi-lab.github.io/)), working on robot-assisted dressing.
 
 My research interests include adaptive control, system identification, robotics, and haptics.
 
