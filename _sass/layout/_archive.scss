@@ -259,7 +259,7 @@
   }
 
   .pub-title {
-    margin: 0 0 0.25em;
+    margin: 0 0 0.4em;
     padding-left: 2rem;
     text-indent: -2rem;
     font-weight: 700;
@@ -268,12 +268,25 @@
   .pub-me {
     text-decoration: underline;
   }
+}
 
-  .pub-meta {
-    margin: 0;
-    padding-left: 2rem;
-    color: var(--global-text-color-light);
-    font-size: $type-size-6;
+.pub-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  margin-left: 2rem;
+  padding: 0.2em 0.8em;
+  color: var(--global-link-color);
+  font-size: $type-size-7;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid var(--global-link-color);
+  border-radius: 999px;
+  transition: $global-transition;
+
+  &:hover {
+    color: #fff;
+    background: var(--global-link-color);
   }
 }
 
@@ -297,6 +310,11 @@
   a {
     border-radius: $border-radius;
   }
+}
+
+#pub-category-tabs a {
+  padding-top: 0.45em;
+  padding-bottom: 0.45em;
 }
 
 #pub-year-tabs {

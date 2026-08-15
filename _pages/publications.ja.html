@@ -52,12 +52,10 @@ ref: publications
     <ul class="pub-category">
     {% for item in items %}
       <li data-year="{{ item.year }}">
-        <p class="pub-title">[{{ forloop.index }}] {{ item.title }}</p>
-        {% if item.authors and item.authors != "" %}
-        <p class="pub-meta">{{ item.authors | replace: "Akira Takakura", "<strong class='pub-me'>Akira Takakura</strong>" }}<br>
-        {{ item.venue }}{% if item.details %}, {{ item.details }}{% endif %} ({{ item.date }})</p>
-        {% else %}
-        <p class="pub-meta">{{ item.venue }} ({{ item.date }})</p>
+        <p class="pub-title">[{{ forloop.index }}]
+        {% if item.authors and item.authors != "" %}{{ item.authors | replace: "Akira Takakura", "<strong class='pub-me'>Akira Takakura</strong>" }}, {% endif %}&ldquo;{{ item.title }}&rdquo;, {{ item.venue }}{% if item.details %}, {{ item.details }}{% endif %}, {{ item.year }}.</p>
+        {% if item.webpage and item.webpage != "" %}
+        <a class="pub-badge" href="{{ item.webpage }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i> Website</a>
         {% endif %}
       </li>
     {% endfor %}
