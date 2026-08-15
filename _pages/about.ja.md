@@ -66,5 +66,3 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 </script>
-
-[過去のニュース一覧 →]({{ "/ja/news/" | relative_url }})

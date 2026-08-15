@@ -69,5 +69,3 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 </script>
-
-[View all news →]({{ "/news/" | relative_url }})
