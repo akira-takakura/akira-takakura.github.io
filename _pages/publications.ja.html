@@ -34,7 +34,8 @@ ref: publications
 </nav>
 
 <div id="pub-lists">
-{% for cat in "journal,domestic,international,award" | split: "," %}
+{% assign pub_categories = "journal,domestic,international,award" | split: "," %}
+{% for cat in pub_categories %}
   {% assign items = pub_list | where: "category", cat %}
   <ul class="pub-category" data-cat="{{ cat }}"{% unless cat == "journal" %} style="display:none;"{% endunless %}>
   {% for item in items %}
