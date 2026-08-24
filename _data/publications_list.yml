@@ -1,4 +1,4 @@
-# Structured achievement list rendered by _pages/publications.html and
+﻿# Structured achievement list rendered by _pages/publications.html and
 # publications.ja.html via category/year tab filtering. Titles, authors and
 # venues are kept in English on both language pages (standard academic
 # practice). Source: https://researchmap.jp/akira_takakura?lang=en
@@ -6,7 +6,7 @@
 - category: journal
   year: 2026
   title: "Bilateral Teleoperation with Auto-Elimination of Probing Signal for Environmental Impedance Identification Considering Operability"
-  authors: "Akira Takakura, Izumi Kotani, Kazuki Yane, Takahiro Nozaki"
+  authors: "A. Takakura, I. Kotani, K. Yane, T. Nozaki"
   venue: "IEEE Open Journal of the Industrial Electronics Society"
   details: "pp.1-11"
   date: "March 2026"
@@ -15,7 +15,7 @@
 - category: journal
   year: 2026
   title: "Compatible realization of control and identification of direct adaptive control via probing signal auto-elimination"
-  authors: "Akira Takakura, Takashi Yokoyama, Takahiro Nozaki, Shuichi Adachi, Hiromitsu Ohmori"
+  authors: "A. Takakura, T. Yokoyama, T. Nozaki, S. Adachi, H. Ohmori"
   venue: "IFAC Journal of Systems and Control"
   details: "100375"
   date: "January 2026"
@@ -24,7 +24,7 @@
 - category: journal
   year: 2026
   title: "Motion Reproduction System for Environmental Impedance Variation via Data-Driven Identification of Human Stiffness"
-  authors: "Akira Takakura, Kazuki Yane, Tomoya Kitamura, Shuichi Adachi, Takahiro Nozaki"
+  authors: "A. Takakura, K. Yane, T. Kitamura, S. Adachi, T. Nozaki"
   venue: "IEEE Transactions on Industrial Electronics"
   details: "73(5), 7214-7224"
   date: "May 2026"
@@ -33,14 +33,14 @@
 - category: international_proc
   year: 2026
   title: "Compatible realization of control and identification of direct adaptive control via probing signal auto-elimination"
-  authors: "Akira Takakura, Takashi Yokoyama, Takahiro Nozaki, Shuichi Adachi, Hiromitsu Ohmori"
+  authors: "A. Takakura, T. Yokoyama, T. Nozaki, S. Adachi, H. Ohmori"
   venue: "IFAC World Congress (IFAC WC2026)"
   date: "August 2026"
 
 - category: international_proc
   year: 2026
   title: "Identification of the Trapping Range of Optical Tweezers Adapting to Changes in Particle Size and Laser Power"
-  authors: "Moyu Otsuka, Akira Takakura, Saki Kozu, Koji Niwa, Kazunobu Hashikawa, Takahiro Nozaki"
+  authors: "M. Otsuka, A. Takakura, S. Kozu, K. Niwa, K. Hashikawa, T. Nozaki"
   venue: "IEEE 35th International Symposium on Industrial Electronics (ISIE2026)"
   date: "June 2026"
   webpage: "https://researchmap.jp/akira_takakura/presentations/54246206"
@@ -48,7 +48,7 @@
 - category: international_noproc
   year: 2026
   title: "Bilateral Teleoperation With Autoelimination of Probing Signal for Environmental Impedance Identification Considering Operability"
-  authors: "Akira Takakura, Izumi Kotani, Kazuki Yane, Takahiro Nozaki"
+  authors: "A. Takakura, I. Kotani, K. Yane, T. Nozaki"
   venue: "IEEE 35th International Symposium on Industrial Electronics (ISIE2026)"
   date: "June 2026"
   webpage: "https://researchmap.jp/akira_takakura/presentations/54235909"
@@ -56,7 +56,7 @@
 - category: international_proc
   year: 2026
   title: "Mitigation of Current Steady-State Error in PMLSM via Multi-Sampling Deadbeat Current Control with Extended State Observer"
-  authors: "Hozumi Kurotaki, Akira Takakura, Tomoki Yokoyama, Toshiyuki Murakami, Takahiro Nozaki"
+  authors: "H. Kurotaki, A. Takakura, T. Yokoyama, T. Murakami, T. Nozaki"
   venue: "The 2026 International Power Electronics Conference (IPEC-2026)"
   date: "June 2026"
   webpage: "https://researchmap.jp/akira_takakura/presentations/54413429"
@@ -64,7 +64,7 @@
 - category: international_noproc
   year: 2026
   title: "Motion Reproduction System for Environmental Impedance Variation via Data-driven Identification of Human Stiffness"
-  authors: "Akira Takakura, Kazuki Yane, Tomoya Kitamura, Shuichi Adachi, Takahiro Nozaki"
+  authors: "A. Takakura, K. Yane, T. Kitamura, S. Adachi, T. Nozaki"
   venue: "IEEE 19th International Conference on Advanced Motion Control (AMC2026)"
   date: "March 2026"
   webpage: "https://researchmap.jp/akira_takakura/presentations/52890238"
@@ -72,7 +72,7 @@
 - category: international_proc
   year: 2026
   title: "A High Performance Disturbance Observer: A Unified Synthesis Approach"
-  authors: "Emre Sariyildiz, Akira Takakura, Takahiro Nozaki"
+  authors: "E. Sariyildiz, A. Takakura, T. Nozaki"
   venue: "IEEE 19th International Conference on Advanced Motion Control (AMC2026)"
   date: "March 2026"
   webpage: "https://researchmap.jp/akira_takakura/presentations/52890164"
@@ -80,7 +80,7 @@
 - category: international_proc
   year: 2026
   title: "Instantaneous Environment Identification Using Analytic Signal"
-  authors: "Yuzuka Kajiwara, Akira Takakura, Emre Sariyildiz, Takahiro Nozaki"
+  authors: "Y. Kajiwara, A. Takakura, E. Sariyildiz, T. Nozaki"
   venue: "IEEJ International Workshop on Sensing, Actuation, Motion Control, and Optimization (SAMCON2026)"
   date: "March 2026"
   webpage: "https://researchmap.jp/akira_takakura/presentations/52889931"
@@ -88,7 +88,7 @@
 - category: international_proc
   year: 2026
   title: "Environment-Compliant Motion Generation Based on Mechanical Impedance Bridging"
-  authors: "Kastuma Shirakabe, Akira Takakura, Kazuki Yane, Takahiro Nozaki"
+  authors: "K. Shirakabe, A. Takakura, K. Yane, T. Nozaki"
   venue: "IEEJ International Workshop on Sensing, Actuation, Motion Control, and Optimization (SAMCON2026)"
   date: "March 2026"
   webpage: "https://researchmap.jp/akira_takakura/presentations/52889882"
@@ -96,7 +96,7 @@
 - category: international_proc
   year: 2026
   title: "GOSIL: A Goal-Oriented Motion Correction Framework for Environmental Adaptation via Real-Time Simulation-in-the-Loop"
-  authors: "Taiyo Shimada, Akira Takakura, Takahiro Nozaki"
+  authors: "T. Shimada, A. Takakura, T. Nozaki"
   venue: "IEEJ International Workshop on Sensing, Actuation, Motion Control, and Optimization (SAMCON2026)"
   date: "March 2026"
   webpage: "https://researchmap.jp/akira_takakura/presentations/52889497"
@@ -104,7 +104,7 @@
 - category: international_proc
   year: 2025
   title: "Environmental Stiffness-Based Gain Updating Law for Bilateral Teleoperation"
-  authors: "Akira Takakura, Shigeki Yashita, Takahiro Nozaki"
+  authors: "A. Takakura, S. Yashita, T. Nozaki"
   venue: "IFAC Joint Symposia on Mechatronics & Robotics"
   date: "July 2025"
   webpage: "https://researchmap.jp/akira_takakura/presentations/51965122"
@@ -112,7 +112,7 @@
 - category: international_proc
   year: 2025
   title: "Control Stiffness-Based Motion Reproduction for Environmental Impedance Variation"
-  authors: "Akira Takakura, Takahiro Nozaki"
+  authors: "A. Takakura, T. Nozaki"
   venue: "2025 IEEE International Conference on Mechatronics (ICM)"
   date: "March 2025"
   webpage: "https://researchmap.jp/akira_takakura/presentations/51965088"
@@ -120,7 +120,7 @@
 - category: international_proc
   year: 2024
   title: "Probing Signal Injection for Compatible Realization of Operationality and Impedance Identification"
-  authors: "Akira Takakura, Kazuki Yane, Takahiro Nozaki"
+  authors: "A. Takakura, K. Yane, T. Nozaki"
   venue: "IECON 2024 - 50th Annual Conference of the IEEE Industrial Electronics Society"
   date: "November 2024"
   webpage: "https://researchmap.jp/akira_takakura/presentations/51965111"
@@ -128,7 +128,7 @@
 - category: domestic
   year: 2026
   title: "Instantaneous Environmental Impedance Identification via Finite Time Observer"
-  authors: ""
+  authors: "A. Takakura, K. Yane, M. Murakami, T. Kitamura, H. Nakamura, S. Adachi, T. Nozaki"
   venue: "The Society of Instrument and Control Engineers (SICE)"
   date: "March 2026"
   webpage: "https://researchmap.jp/akira_takakura/presentations/52545190"
@@ -136,7 +136,7 @@
 - category: domestic
   year: 2025
   title: "Design of 2DOF Force Control System via Environmental Impedance Identification for Iterative Motion"
-  authors: "Akira Takakura, Shuichi Adachi, Takahiro Nozaki"
+  authors: "A. Takakura, S. Adachi, T. Nozaki"
   venue: "IEEJ Industry Applications Society Conference"
   date: "August 2025"
   webpage: "https://researchmap.jp/akira_takakura/presentations/51965079"

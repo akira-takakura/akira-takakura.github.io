@@ -55,7 +55,7 @@ ref: publications
       {% assign pub_num = items_total | minus: forloop.index0 %}
       <li data-year="{{ item.year }}">
         <p class="pub-title"><span class="pub-num">[{{ pub_num }}]</span><span class="pub-body">
-        {% if item.authors and item.authors != "" %}{{ item.authors | replace: "Akira Takakura", "<strong class='pub-me'>Akira Takakura</strong>" }}, {% endif %}&ldquo;{{ item.title }}&rdquo;, <i>{{ item.venue }}</i>{% if item.details %}, {{ item.details }}{% endif %}, {{ item.year }}.</span></p>
+        {% if item.authors and item.authors != "" %}{{ item.authors | replace: "A. Takakura", "<strong class='pub-me'>A. Takakura</strong>" }}, {% endif %}&ldquo;{{ item.title }}&rdquo;, <i>{{ item.venue }}</i>{% if item.details %}, {{ item.details }}{% endif %}, {{ item.year }}.</span></p>
         {% if item.webpage and item.webpage != "" %}<p class="pub-links"><a class="pub-badge" href="{{ item.webpage }}" target="_blank" rel="noopener noreferrer">Website</a></p>{% endif %}
       </li>
     {% endfor %}
