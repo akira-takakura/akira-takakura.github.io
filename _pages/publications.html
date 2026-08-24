@@ -71,6 +71,20 @@ document.addEventListener('DOMContentLoaded', function () {
   var catSections = document.querySelectorAll('#pub-lists .pub-section');
   var currentYear = 'all';
 
+  function renumber() {
+    catSections.forEach(function (sec) {
+      if (sec.style.display === 'none') { return; }
+      var visible = Array.prototype.filter.call(sec.querySelectorAll('li'), function (li) {
+        return li.style.display !== 'none';
+      });
+      var total = visible.length;
+      visible.forEach(function (li, idx) {
+        var numEl = li.querySelector('.pub-num');
+        if (numEl) { numEl.textContent = '[' + (total - idx) + ']'; }
+      });
+    });
+  }
+
   function applyYearFilter() {
     catSections.forEach(function (sec) {
       if (sec.style.display === 'none') { return; }
@@ -79,6 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
         li.style.display = (currentYear === 'all' || y === currentYear) ? '' : 'none';
       });
     });
+    renumber();
   }
 
   catButtons.forEach(function (btn) {

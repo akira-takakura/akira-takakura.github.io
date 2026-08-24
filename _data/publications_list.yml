@@ -32,6 +32,13 @@
 
 - category: international_proc
   year: 2026
+  title: "Compatible realization of control and identification of direct adaptive control via probing signal auto-elimination"
+  authors: "Akira Takakura, Takashi Yokoyama, Takahiro Nozaki, Shuichi Adachi, Hiromitsu Ohmori"
+  venue: "IFAC World Congress (IFAC WC2026)"
+  date: "August 2026"
+
+- category: international_proc
+  year: 2026
   title: "Identification of the Trapping Range of Optical Tweezers Adapting to Changes in Particle Size and Laser Power"
   authors: "Moyu Otsuka, Akira Takakura, Saki Kozu, Koji Niwa, Kazunobu Hashikawa, Takahiro Nozaki"
   venue: "IEEE 35th International Symposium on Industrial Electronics (ISIE2026)"
