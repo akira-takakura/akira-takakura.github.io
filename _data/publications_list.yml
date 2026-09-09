@@ -134,6 +134,22 @@
   webpage: "https://researchmap.jp/akira_takakura/presentations/52545190"
 
 - category: domestic
+  year: 2026
+  title: "Environment stiffness Identification with Time-variant Equilibrium Point for Bimanual Manipulation"
+  authors: "A. Takakura, K. Yane, T. Nozaki"
+  venue: "IEEJ Industry Applications Society Conference"
+  date: "September 2026"
+  webpage: "https://researchmap.jp/akira_takakura/presentations/54832754"
+
+- category: domestic
+  year: 2026
+  title: "Motion Generation Using Nonlinear Online Adaptation for Center-of-Mass Uncertainty"
+  authors: "T. Shimada, K. Yane, A. Takakura, T. Nozaki"
+  venue: "IEEJ Industry Applications Society Conference"
+  date: "September 2026"
+  webpage: "https://researchmap.jp/akira_takakura/presentations/54832767"
+
+- category: domestic
   year: 2025
   title: "Design of 2DOF Force Control System via Environmental Impedance Identification for Iterative Motion"
   authors: "A. Takakura, S. Adachi, T. Nozaki"
