@@ -7,7 +7,8 @@ lang: en
 ref: hobbies
 ---
 
-You can find hobby videos on the YouTube channel: [@ClTeam137](https://www.youtube.com/@ClTeam137)
+You can find hobby videos on the YouTube channel: [@ClTeam137](https://www.youtube.com/@ClTeam137)<br>
+Also, I am the member of [IFAC Orchestra](https://ifac-control.org/conferences/ifac-control-orchestra/).
 
 <div class="hobby-video" style="width: 70%; margin-bottom: 1.5em;">
   <div class="fluid-width-video-wrapper" style="position: relative; width: 100%; height: 0; padding: 56.25% 0 0;">
