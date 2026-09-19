@@ -9,10 +9,14 @@ ref: hobbies
 
 You can find hobby videos on the YouTube channel: [@ClTeam137](https://www.youtube.com/@ClTeam137)
 
-<div style="position: relative; width: 70%; aspect-ratio: 16 / 9; overflow: hidden; margin-bottom: 1.5em;">
-  <iframe src="https://www.youtube.com/embed/EJLHpT3YtA8" title="YouTube video player — EJLHpT3YtA8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+<div class="hobby-video" style="width: 70%; margin-bottom: 1.5em;">
+  <div class="fluid-width-video-wrapper" style="position: relative; width: 100%; height: 0; padding: 56.25% 0 0;">
+    <iframe src="https://www.youtube.com/embed/EJLHpT3YtA8" title="YouTube video player - EJLHpT3YtA8" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+  </div>
 </div>
 
-<div style="position: relative; width: 70%; aspect-ratio: 16 / 9; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/Q-Ic3uCM7kQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+<div class="hobby-video" style="width: 70%; margin-bottom: 1.5em;">
+  <div class="fluid-width-video-wrapper" style="position: relative; width: 100%; height: 0; padding: 56.25% 0 0;">
+    <iframe src="https://www.youtube.com/embed/Q-Ic3uCM7kQ" title="YouTube video player - Q-Ic3uCM7kQ" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+  </div>
 </div>
