@@ -127,11 +127,10 @@
 
 - category: domestic
   year: 2026
-  title: "Instantaneous Environmental Impedance Identification via Finite Time Observer"
-  authors: "A. Takakura, K. Yane, M. Murakami, T. Kitamura, H. Nakamura, S. Adachi, T. Nozaki"
-  venue: "The Society of Instrument and Control Engineers (SICE)"
-  date: "March 2026"
-  webpage: "https://researchmap.jp/akira_takakura/presentations/52545190"
+  title: "A Unified Approach of Simultaneous Estimation of State and Environmental Impedance Using Extended Kalman Filter"
+  authors: "A. Takakura, M. Otsuka, S. Adachi, T. Nozaki"
+  venue: "SICE FESTIVAL 2026"
+  date: "September 15, 2026"
 
 - category: domestic
   year: 2026
@@ -148,6 +147,14 @@
   venue: "IEEJ Industry Applications Society Conference"
   date: "September 2026"
   webpage: "https://researchmap.jp/akira_takakura/presentations/54832767"
+
+- category: domestic
+  year: 2026
+  title: "Instantaneous Environmental Impedance Identification via Finite Time Observer"
+  authors: "A. Takakura, K. Yane, M. Murakami, T. Kitamura, H. Nakamura, S. Adachi, T. Nozaki"
+  venue: "The Society of Instrument and Control Engineers (SICE)"
+  date: "March 2026"
+  webpage: "https://researchmap.jp/akira_takakura/presentations/52545190"
 
 - category: domestic
   year: 2025
